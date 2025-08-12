@@ -1,57 +1,39 @@
-name: Correção de Bug
-description: Relate um problema ou comportamento inesperado no sistema
-labels: ["bug"]
-title: "[FIX]: "
+name: Feature
+description: Solicite uma nova funcionalidade ou melhoria
+labels: ["enhancement"]
+title: "[FEAT]: "
 assignees: ["autor"]
-
 body:
   - type: markdown
     attributes:
       value: |
-        **Antes de criar a issue**, verifique se o problema já foi relatado.
+        **Antes de criar a solicitação**, verifique se essa funcionalidade já não foi solicitada por outra pessoa.  
         Consulte as *issues* abertas/fechadas para evitar duplicidade.
 
   - type: textarea
     id: descricao
     attributes:
-      label: Descrição do Problema
-      description: Explique resumidamente o bug encontrado.
-      placeholder: "Informe o que está acontecendo de forma clara."
+      label: Descrição
+      description: Faça uma breve descrição da funcionalidade ou melhoria que você gostaria de propor.
+      placeholder: Explique resumidamente o que é e por que seria útil.
     validations:
       required: true
 
   - type: textarea
-    id: comportamento-atual
+    id: informacoes-adicionais
     attributes:
-      label: Comportamento Atual
-      description: Descreva exatamente o que está acontecendo no sistema.
-      placeholder: "Explique o comportamento observado."
-    validations:
-      required: true
-
-  - type: textarea
-    id: comportamento-esperado
-    attributes:
-      label: Comportamento Esperado
-      description: Informe qual deveria ser o comportamento correto.
-      placeholder: "Descreva o funcionamento esperado."
-    validations:
-      required: true
-
-  - type: textarea
-    id: passos-reproducao
-    attributes:
-      label: Passos para Reproduzir
-      description: Explique como reproduzir o problema.
-      placeholder: "Liste os passos para reproduzir o bug."
+      label: Informações Adicionais
+      description: Inclua informações extras como soluções propostas, links, prints de tela, etc.
+      placeholder: Adicione detalhes relevantes.
     validations:
       required: false
 
-  - type: textarea
-    id: ambiente
+- type: markdown
     attributes:
-      label: Ambiente
-      description: Informe detalhes do ambiente onde o bug ocorreu.
-      placeholder: "Ex.: Navegador, versão do sistema, SO, etc."
-    validations:
-      required: false
+      value: |
+        ### 📋 Regras / Requisitos
+
+        | Regra  | Descrição |
+        |--------|-----------|
+        | RN001  | Descreva a primeira regra ou requisito aqui. |
+        | RN002  | Descreva a segunda regra ou requisito aqui. |
