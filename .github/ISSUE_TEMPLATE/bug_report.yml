@@ -1,4 +1,4 @@
-name: 🐞 Correção de Bug
+name: Fix
 description: Relate um problema ou comportamento inesperado no sistema
 labels: ["bug"]
 title: "[FIX]: "
