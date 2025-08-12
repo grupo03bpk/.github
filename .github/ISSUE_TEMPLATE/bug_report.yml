@@ -1,39 +1,57 @@
-name: 🐛Bug Report
-description: File a bug report here
-title: "[BUG]: "
+name: Fix
+description: Relate um problema ou comportamento inesperado no sistema
 labels: ["bug"]
-assignees: ["guiigos"]
+title: "[FIX]: "
+assignees: ["autor"]
+
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report 🤗
-        Make sure there aren't any open/closed issues for this topic 😃
-        
+        **Antes de criar a issue**, verifique se o problema já foi relatado.
+        Consulte as *issues* abertas/fechadas para evitar duplicidade.
+
   - type: textarea
-    id: bug-description
+    id: descricao
     attributes:
-      label: Description of the bug
-      description: Give us a brief description of what happened and what should have happened
+      label: Descrição do Problema
+      description: Explique resumidamente o bug encontrado.
+      placeholder: Informe o que está acontecendo de forma clara.
     validations:
       required: true
-      
+
   - type: textarea
-    id: steps-to-reproduce
+    id: comportamento-atual
     attributes:
-      label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+      label: Comportamento Atual
+      description: Descreva exatamente o que está acontecendo no sistema.
+      placeholder: Explique o comportamento observado.
     validations:
       required: true
-      
+
   - type: textarea
-    id: additional-information
+    id: comportamento-esperado
     attributes:
-      label: Additional Information
-      description: |
-        Provide any additional information such as logs, screenshots, likes, scenarios in which the bug occurs so that it facilitates resolving the issue.
+      label: Comportamento Esperado
+      description: Informe qual deveria ser o comportamento correto.
+      placeholder: Descreva o funcionamento esperado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos-reproducao
+    attributes:
+      label: Passos para Reproduzir
+      description: Explique como reproduzir o problema.
+      placeholder: Liste os passos para reproduzir o bug.
+    validations:
+      required: false
+
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Informe detalhes do ambiente onde o bug ocorreu.
+      placeholder: Ex.: Navegador, versão do sistema, SO, etc.
+    validations:
+      required: false
