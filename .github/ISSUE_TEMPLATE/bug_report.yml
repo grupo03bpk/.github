@@ -1,8 +1,8 @@
-name: Fix
+name: 🐞 Correção de Bug
 description: Relate um problema ou comportamento inesperado no sistema
 labels: ["bug"]
 title: "[FIX]: "
-assignees: ["autor"]
+assignees: ["guiigos"]
 
 body:
   - type: markdown
@@ -16,7 +16,7 @@ body:
     attributes:
       label: Descrição do Problema
       description: Explique resumidamente o bug encontrado.
-      placeholder: Informe o que está acontecendo de forma clara.
+      placeholder: "Informe o que está acontecendo de forma clara."
     validations:
       required: true
 
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Comportamento Atual
       description: Descreva exatamente o que está acontecendo no sistema.
-      placeholder: Explique o comportamento observado.
+      placeholder: "Explique o comportamento observado."
     validations:
       required: true
 
@@ -34,7 +34,7 @@ body:
     attributes:
       label: Comportamento Esperado
       description: Informe qual deveria ser o comportamento correto.
-      placeholder: Descreva o funcionamento esperado.
+      placeholder: "Descreva o funcionamento esperado."
     validations:
       required: true
 
@@ -43,7 +43,7 @@ body:
     attributes:
       label: Passos para Reproduzir
       description: Explique como reproduzir o problema.
-      placeholder: Liste os passos para reproduzir o bug.
+      placeholder: "Liste os passos para reproduzir o bug."
     validations:
       required: false
 
@@ -52,6 +52,6 @@ body:
     attributes:
       label: Ambiente
       description: Informe detalhes do ambiente onde o bug ocorreu.
-      placeholder: Ex.: Navegador, versão do sistema, SO, etc.
+      placeholder: "Ex.: Navegador, versão do sistema, SO, etc."
     validations:
       required: false
