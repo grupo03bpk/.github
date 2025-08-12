@@ -1,24 +1,40 @@
-name: ✨Feature Request
-description: Request a new feature or enhancement
+name: Feature
+description: Solicite uma nova funcionalidade ou melhoria
 labels: ["enhancement"]
 title: "[FEAT]: "
-assignees: ["guiigos"]
+assignees: ["autor"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please make sure this feature request hasn't been already submitted by someone by looking through other open/closed issues
-  
+        **Antes de criar a solicitação**, verifique se essa funcionalidade já não foi solicitada por outra pessoa.  
+        Consulte as *issues* abertas/fechadas para evitar duplicidade.
+
   - type: textarea
-    id: description
+    id: descricao
     attributes:
-      label: Description
-      description: Give us a brief description of the feature or enhancement you would like
+      label: Descrição
+      description: Faça uma breve descrição da funcionalidade ou melhoria que você gostaria de propor.
+      placeholder: Explique resumidamente o que é e por que seria útil.
     validations:
       required: true
-      
+
   - type: textarea
-    id: additional-information
+    id: informacoes-adicionais
     attributes:
-      label: Additional Information
-      description: Give us some additional information on the feature request like proposed solutions, links, screenshots, etc.
+      label: Informações Adicionais
+      description: Inclua informações extras como soluções propostas, links, prints de tela, etc.
+      placeholder: Adicione detalhes relevantes.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 📋 Regras / Requisitos
+
+        | Regra  | Descrição |
+        |--------|-----------|
+        | RN001  | Descreva a primeira regra ou requisito aqui. |
+        | RN002  | Descreva a segunda regra ou requisito aqui. |
+        | RN003  | Continue listando conforme necessário. |
