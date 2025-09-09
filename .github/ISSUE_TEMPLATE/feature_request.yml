@@ -69,13 +69,3 @@ body:
       placeholder: "Adicione detalhes relevantes."
     validations:
       required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        ### 📋 Regras / Requisitos
-
-        | Regra  | Descrição |
-        |--------|-----------|
-        | RN001  | Descreva a primeira regra ou requisito aqui. |
-        | RN002  | Descreva a segunda regra ou requisito aqui. |
