@@ -10,15 +10,6 @@ body:
         **Antes de criar a solicitação**, verifique se essa funcionalidade já não foi solicitada por outra pessoa.  
         Consulte as *issues* abertas/fechadas para evitar duplicidade.
 
-  - type: input
-    id: titulo
-    attributes:
-      label: Título
-      description: Nome curto e descritivo da funcionalidade.
-      placeholder: "Exemplo: Implementar autenticação com Google"
-    validations:
-      required: true
-
   - type: textarea
     id: objetivo
     attributes:
