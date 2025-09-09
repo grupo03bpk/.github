@@ -15,7 +15,7 @@ body:
     attributes:
       label: Título
       description: Nome curto e descritivo da funcionalidade.
-      placeholder: Exemplo: Implementar autenticação com Google
+      placeholder: "Exemplo: Implementar autenticação com Google"
     validations:
       required: true
 
@@ -24,7 +24,7 @@ body:
     attributes:
       label: Objetivo
       description: O que essa funcionalidade deve atingir ou resolver?
-      placeholder: Explique qual problema será solucionado ou valor agregado.
+      placeholder: "Explique qual problema será solucionado ou valor agregado."
     validations:
       required: true
 
@@ -33,7 +33,7 @@ body:
     attributes:
       label: Contexto
       description: Contextualize o motivo dessa feature. Qual a necessidade ou situação atual?
-      placeholder: Explique o cenário atual e por que essa mudança é importante.
+      placeholder: "Explique o cenário atual e por que essa mudança é importante."
     validations:
       required: false
 
@@ -75,7 +75,7 @@ body:
     attributes:
       label: Informações Adicionais
       description: Inclua informações extras como soluções propostas, links, prints de tela, etc.
-      placeholder: Adicione detalhes relevantes.
+      placeholder: "Adicione detalhes relevantes."
     validations:
       required: false
 
