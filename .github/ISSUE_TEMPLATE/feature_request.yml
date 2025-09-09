@@ -10,14 +10,65 @@ body:
         **Antes de criar a solicitação**, verifique se essa funcionalidade já não foi solicitada por outra pessoa.  
         Consulte as *issues* abertas/fechadas para evitar duplicidade.
 
-  - type: textarea
-    id: descricao
+  - type: input
+    id: titulo
     attributes:
-      label: Descrição
-      description: Faça uma breve descrição da funcionalidade ou melhoria que você gostaria de propor.
-      placeholder: Explique resumidamente o que é e por que seria útil.
+      label: Título
+      description: Nome curto e descritivo da funcionalidade.
+      placeholder: Exemplo: Implementar autenticação com Google
     validations:
       required: true
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: O que essa funcionalidade deve atingir ou resolver?
+      placeholder: Explique qual problema será solucionado ou valor agregado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Contextualize o motivo dessa feature. Qual a necessidade ou situação atual?
+      placeholder: Explique o cenário atual e por que essa mudança é importante.
+    validations:
+      required: false
+
+  - type: textarea
+    id: requisitos
+    attributes:
+      label: Requisitos
+      description: Liste os requisitos funcionais e não funcionais.
+      placeholder: |
+        - RF001: Deve permitir login com conta Google.
+        - RNF001: Deve estar em conformidade com LGPD.
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios-aceite
+    attributes:
+      label: Critérios de Aceite
+      description: Defina condições que devem ser atendidas para considerar a funcionalidade concluída.
+      placeholder: |
+        - O usuário consegue logar com Google sem erros.
+        - Os dados são armazenados de forma segura.
+    validations:
+      required: true
+
+  - type: textarea
+    id: checklist-dod
+    attributes:
+      label: Checklist de DoD (Definition of Done)
+      description: Marque os pontos que garantem a entrega completa da feature.
+      placeholder: |
+        - [ ] Código revisado
+        - [ ] Documentação atualizada
+    validations:
+      required: false
 
   - type: textarea
     id: informacoes-adicionais
